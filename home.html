@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Out and Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="Fonts/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="Fonts/Lato.css?family=Lato" type="text/css">
+<link rel="stylesheet" href="Fonts/Montserrat.css?family=Montserrat" type="text/css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.css-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="css-top">
+  <div class="css-bar css-red css-card-2 css-left-align css-large">
+    <a class="css-bar-item css-button css-hide-medium css-hide-large css-right css-padding-large css-hover-white css-large css-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="css-bar-item css-button css-padding-large css-white">Home</a>
+    <a href="/activities" class="css-bar-item css-button css-hide-small css-padding-large css-hover-white">Activities</a>
+    <a href="/bookings" class="css-bar-item css-button css-hide-small css-padding-large css-hover-white">Bookings</a>
+    <a href="/cafe" class="css-bar-item css-button css-hide-small css-padding-large css-hover-white">Café</a>
+    <a href="/map" class="css-bar-item css-button css-hide-small css-padding-large css-hover-white">Map</a>
+    <a href="/quiz" class="css-bar-item css-button css-hide-small css-padding-large css-hover-white">Quiz</a>
+    <a href="/about" class="css-bar-item css-button css-hide-small css-padding-large css-hover-white">About</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="css-bar-block css-white css-hide css-hide-large css-hide-medium css-large">
+    <a href="/activities" class="css-bar-item css-button css-padding-large">Activities</a>
+    <a href="/bookings" class="css-bar-item css-button css-padding-large">Bookings</a>
+    <a href="/cafe" class="css-bar-item css-button css-padding-large">Café</a>
+    <a href="/map" class="css-bar-item css-button css-padding-large">Map</a>
+    <a href="/quiz" class="css-bar-item css-button css-padding-large">Quiz</a>
+    <a href="/about" class="css-bar-item css-button css-padding-large">About</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="css-container css-red css-center" style="padding:128px 16px">
+  <h1 class="css-margin css-jumbo">Out and Up</h1>
+  <p class="css-xlarge">Out and Up acivity centre</p>
+  <button class="css-button css-black css-padding-large css-large css-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="css-row-padding css-padding-64 css-container">
+  <div class="css-content">
+    <div class="css-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="css-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="css-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="css-third css-center">
+      <i class="fa fa-anchor css-padding-64 css-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="css-row-padding css-light-grey css-padding-64 css-container">
+  <div class="css-content">
+    <div class="css-third css-center">
+      <i class="fa fa-coffee css-padding-64 css-text-red css-margin-right"></i>
+    </div>
+
+    <div class="css-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="css-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="css-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<div class="css-container css-black css-center css-opacity css-padding-64">
+    <h1 class="css-margin css-xlarge">Quote of the day: live life</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("css-show") == -1) {
+        x.className += " css-show";
+    } else {
+        x.className = x.className.replace(" css-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
