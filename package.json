@@ -16,5 +16,5 @@
     "start":"node webserver.js"
   },
   "author": "TheAlgerianPrince",
-  "license": "MIT",
+  "license": "MIT"
 }
