@@ -16,6 +16,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <body>
   <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
+    $(document).keydown(function(e){
+    if(e.which === 123){
+       return false;
+    }
+    });
   </script>
   
 <!-- Navbar -->
