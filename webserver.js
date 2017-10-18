@@ -26,19 +26,22 @@ http.createServer(function(request, response){
     case "/activities":
       getStaticFileContent(response, "activities.html","text/html");
       break;
-	  case "/bookings":
+    case "/bookings":
       getStaticFileContent(response, "bookings.html","text/html");
       break;
     case "/cafe":
       getStaticFileContent(response, "cafe.html","text/html");
       break;
-	case "/map":
+    case "/map":
       getStaticFileContent(response, "map.html","text/html");
       break;
-	case "/quiz":
+    case "/quiz":
       getStaticFileContent(response, "quiz.html","text/html");
       break;
-	case "/about":
+    case "/quiz.swf":
+      getStaticFileContent(response, "quiz.swf","application/x-shockwave-flash");
+      break;
+    case "/about":
       getStaticFileContent(response, "about.html","text/html");
       break;
     case "/style.css":
@@ -65,7 +68,7 @@ http.createServer(function(request, response){
     case "/favicon.ico":
       getStaticFileContent(response, "favicon.ico","image/x-icon");
       break;
-	case "/Images/Outdoor-Centre.jpg":
+    case "/Images/Outdoor-Centre.jpg":
       getStaticFileContent(response, "Images/Outdoor-Centre.jpg","image/jpeg");
       break;
     default:
