@@ -41,8 +41,8 @@ http.createServer(function(request, response){
     case "/quiz.swf":
       getStaticFileContent(response, "quiz.swf","application/x-shockwave-flash");
       break;
-    case "/about":
-      getStaticFileContent(response, "about.html","text/html");
+    case "/contact":
+      getStaticFileContent(response, "contact.html","text/html");
       break;
     case "/style.css":
       getStaticFileContent(response, "style.css","text/css");
