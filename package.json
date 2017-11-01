@@ -7,14 +7,9 @@
     "node": "latest",
     "npm": "latest"
   },
-  "dependencies" : {
-    "fs": "latest",
-    "http": "latest",
-	"url": "latest"
-  },
   "scripts": {
     "start":"node webserver.js"
   },
-  "author": "TheAlgerianPrince",
+  "author": "Xenolith",
   "license": "MIT"
 }
