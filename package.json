@@ -7,9 +7,6 @@
     "node": "latest",
     "npm": "latest"
   },
-  "dependencies" : {
-     "formidable": "latest"
-  },
   "scripts": {
     "start":"node webserver.js"
   },
