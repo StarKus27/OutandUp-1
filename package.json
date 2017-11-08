@@ -4,7 +4,7 @@
   "description": "a webserver",
   "main": "webserver.js",
   "scripts": {
-    "test": "node webserver.js"
+    "start": "node webserver.js"
   },
   "author": "ˣᵉⁿᵒˡᶦᵗʰ#1097",
   "license": "ISC",
