@@ -3,8 +3,10 @@ const express = require("express");
 const bodyParser = require('body-parser')
 const path = require("path");
 
-//Clients
+//
 const app = express();
+const jsonParser = bodyParser.json()
+const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 //Routes
 app.get("/", function(request, response) {
@@ -29,6 +31,10 @@ app.get("/quiz.swf", function(request, response) {
   response.sendFile(path.join(__dirname+"/quiz.swf"));
 });
 app.get("/contact", function(request, response) {
+  response.sendFile(path.join(__dirname+"/contact.html"));
+});
+app.post("/contact", urlencodedParser, function(request, response) {
+  console.log(request.body);
   response.sendFile(path.join(__dirname+"/contact.html"));
 });
 app.get("/style.css", function(request, response) {
