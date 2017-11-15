@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node webserver.js"
   },
-  "author": "ˣᵉⁿᵒˡᶦᵗʰ#1097",
+  "author": "Adam Zemiri",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
