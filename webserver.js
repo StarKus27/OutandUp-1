@@ -48,6 +48,13 @@ app.post("/contact", urlencodedParser, function(request, response) {
     subject: "Out and Up: Contact Form", // Subject line
     text: "Name: " + request.body.name + "\nEmail: " + request.body.email + "\nDescription: " + request.body.description
   };
+  transporter.sendMail(mailOptions, function(error, info){
+    if(error){
+        console.log(error);
+    }else{
+        console.log('Message sent: ' + info.response);
+    };
+});
   response.sendFile(path.join(__dirname+"/contact.html"));
 });
 app.get("/style.css", function(request, response) {
