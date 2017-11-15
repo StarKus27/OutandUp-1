@@ -35,7 +35,7 @@ app.get("/contact", function(request, response) {
   response.sendFile(path.join(__dirname+"/contact.html"));
 });
 app.post("/contact", urlencodedParser, function(request, response) {
-  console.log(request.body);
+  console.log("Name: " + request.body.name + ", Email: " + request.body.email + ", Description: " + request.body.description);
   response.sendFile(path.join(__dirname+"/contact.html"));
 });
 app.get("/style.css", function(request, response) {
