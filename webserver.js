@@ -8,6 +8,13 @@ const path = require("path");
 const app = express();
 const jsonParser = bodyParser.json()
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
+const transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'process.env.EMAILADDRESS', // Your email id
+            pass: 'process.env.EMAILPASS' // Your password
+        }
+    });
 
 //Routes
 app.get("/", function(request, response) {
@@ -35,7 +42,12 @@ app.get("/contact", function(request, response) {
   response.sendFile(path.join(__dirname+"/contact.html"));
 });
 app.post("/contact", urlencodedParser, function(request, response) {
-  console.log("Name: " + request.body.name + ", Email: " + request.body.email + ", Description: " + request.body.description);
+  let mailOptions = {
+    from: 'process.env.EMAILADDRESS>', // sender address
+    to: 'process.env.EMAILADDRESS', // list of receivers
+    subject: "Out and Up: Contact Form", // Subject line
+    text: "Name: " + request.body.name + "\nEmail: " + request.body.email + "\nDescription: " + request.body.description
+  };
   response.sendFile(path.join(__dirname+"/contact.html"));
 });
 app.get("/style.css", function(request, response) {
