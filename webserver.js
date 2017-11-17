@@ -11,8 +11,8 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
 const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'process.env.EMAILADDRESS', // Your email id
-            pass: 'process.env.EMAILPASS' // Your password
+            user: "process.env.EMAILADDRESS", // Your email id
+            pass: "process.env.EMAILPASS" // Your password
         }
     });
 
@@ -43,8 +43,8 @@ app.get("/contact", function(request, response) {
 });
 app.post("/contact", urlencodedParser, function(request, response) {
   let mailOptions = {
-    from: 'process.env.EMAILADDRESS>', // sender address
-    to: 'process.env.EMAILADDRESS', // list of receivers
+    from: "process.env.EMAILADDRESS", // sender address
+    to: "process.env.EMAILADDRESS", // list of receivers
     subject: "Out and Up: Contact Form", // Subject line
     text: "Name: " + request.body.name + "\nEmail: " + request.body.email + "\nDescription: " + request.body.description
   };
