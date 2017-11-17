@@ -11,10 +11,10 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
 const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: "process.env.EMAILADDRESS", // Your email id
-            pass: "process.env.EMAILPASS" // Your password
+                user: "outandup27@gmail.com", // Your email id
+                pass: "BarackPutin" // Your password
         }
-    });
+});
 
 //Routes
 app.get("/", function(request, response) {
