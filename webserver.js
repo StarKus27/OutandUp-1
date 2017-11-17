@@ -43,8 +43,8 @@ app.get("/contact", function(request, response) {
 });
 app.post("/contact", urlencodedParser, function(request, response) {
   let mailOptions = {
-    from: "process.env.EMAILADDRESS", // sender address
-    to: "process.env.EMAILADDRESS", // list of receivers
+    from: "outandup27@gmail.com", // sender address
+    to: "outandup27@gmail.com", // list of receivers
     subject: "Out and Up: Contact Form", // Subject line
     text: "Name: " + request.body.name + "\nEmail: " + request.body.email + "\nDescription: " + request.body.description
   };
